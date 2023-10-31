@@ -9,14 +9,18 @@ public class Test {
         int n = s.nextInt();
         int [] arr = new int[n];
         System.out.println("Enter the array");
+
+
         for(int i=0;i<n;i++){
             arr[i]= s.nextInt();
         }
+        System.out.println("Enter the target value");
+        int target = s.nextInt();
 
 
-        TwiceElement S1 = new TwiceElement();
+        rotation S1 = new rotation();
 
-        System.out.println(S1.printArr(arr,n));
+        System.out.println(S1.rotate(arr,target));
 
     }
 }
